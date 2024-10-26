@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Resume</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Hello, I'm Alexei Efremov</h1>
+            <p>A frontend developer & designer, open to communication and collaboration!</p>
+            <a href="#contact" class="btn">Let's Connect</a>
+        </div>
+    </header>
+
+    <!-- Introductory Section -->
+    <section class="intro-section">
+        <img src="static/myfoto.png" style="width: 280px; height: 350px; display: block; margin: 0 auto;">
+        <p class="p3"> *** </p>
+        <p class="p2">Welcome to the Alexei Efremov AI Projects website!</p>
+        <p class="p2">This site, created as an educational project using FastAPI, serves as a demonstration panel for simple artificial intelligence projects.</p>
+        <p class="p2">I invite you to explore AI projects and conduct interesting experiments with them!</p>
+        <p class="p2">If you have any questions or suggestions, feel free to contact me at ajefrenov@gmail.com or via Telegram: @Lex_Je</p>
+        <p class="p2">I am open to communication and collaboration!</p>
+        <p class="p3"> *** </p>
+        <p class="p3">The projects are hosted on the Yandex.Cloud server using a static IP address. The domain name is registered on the Reg.ru website. To ensure the accessibility of the website at http://alexefremov.com/, requests are proxied from ports 80 and 443 to the server running on port 8000 using the Nginx web server.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>                I ))) I (((I --- I invite you to explore AI projects and conduct interesting experiments with them! If you have any questions or suggestions, feel free to contact me at ajefrenov@gmail.com or via Telegram: @Lex_Je I am open to communication and collaboration!         </p>
+        <img src="static/myfoto.png" alt="Profile picture" class="profile-pic">
+        <h3>Skills</h3>
+        <ul>
+            <li>Python</li>
+            <li>ML</li>
+            <li>DL</li>
+            <li>CV</li>
+            <li>FastApi</li>
+            <li>Docker</li>
+        </ul>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <h2>My Work</h2>
+        <div class="portfolio-gallery">
+            <div class="portfolio-item">
+                <img src="static/image3.jpg" alt="Windows in The City">
+                <h4>Windows in The City</h4>
+                <p>Branding project that captures the essence of urban landscapes.</p>
+                <a href="https://ai-hunter.ru/rudn" target="_blank" class="btn">Project Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="static/image1.jpg" alt="Building Blocks">
+                <h4>Building Blocks</h4>
+                <p>Frontend design for a modular and scalable web application interface.</p>
+                <a href="hhttps://ai-hunter.ru/rudn" target="_blank" class="btn">Project Link</a>
+            </div>
+            <div class="portfolio-item">
+                <img src="static/image2.jpg" alt="Shout and Jump">
+                <h4>Shout & Jump</h4>
+                <p>Creative branding project that uses bold visuals to make a statement.</p>
+                <a href="https://ai-hunter.ru/rudn" target="_blank" class="btn">Project Link</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>RUDN Project</h3>
+                <iframe width="100%" height="200" src="https://www.youtube.com/embed/G9g6MgOu7Yk" frameborder="0" allowfullscreen></iframe>
+                <p>This collaboration with RUDN University showcases an advanced AI integration project.</p>
+                <a href="https://ai-hunter.ru/rudn" target="_blank" class="btn">Visit AI-Hunter Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <p>I'm open to discussing new projects, creative ideas, and opportunities to collaborate.</p>
+        <form action="mailto:ajefrenov@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Alexei Efremov. All rights reserved.</p>
+    </footer>
+
+    <!-- Styles -->
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; color: #333;
+               background: url('static/back1.jpg') no-repeat center center fixed;
+               background-size: cover; overflow-y: scroll; }
+
+        .header { background: rgba(0, 0, 0, 0.6); color: white; padding: 20px; text-align: center; }
+        .nav-links { list-style-type: none; display: flex; justify-content: center; gap: 20px; }
+        .nav-links a { color: white; text-decoration: none; }
+        .header-content h1 { font-size: 2em; }
+        .btn { background: #0073e6; color: white; padding: 10px 20px; text-decoration: none; }
+
+        /* Introductory Section */
+        .intro-section { padding: 40px; text-align: center; background: rgba(255, 255, 255, 0.8); margin: 20px; border-radius: 8px; }
+
+        /* About Section */
+        .about { padding: 40px; text-align: center; background: rgba(255, 255, 255, 0.9); margin: 20px; border-radius: 8px; }
+        .about .profile-pic { border-radius: 50%; width: 150px; margin: 20px auto; }
+
+        /* Portfolio Section */
+        .portfolio { padding: 40px; text-align: center; background: rgba(255, 255, 255, 0.9); margin: 20px; border-radius: 8px; }
+        .portfolio-gallery { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .portfolio-item { width: 30%; text-align: center; background: #fff; border-radius: 8px; padding: 10px; }
+        .portfolio-item img { width: 100%; border-radius: 8px; }
+
+        /* Contact Form */
+        .contact form { display: flex; flex-direction: column; gap: 10px; padding: 40px; text-align: center; background: rgba(255, 255, 255, 0.9); margin: 20px; border-radius: 8px; }
+        .contact form input, .contact form textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .contact button { background: #333; color: white; padding: 10px; border-radius: 5px; }
+
+        /* Footer */
+        footer { background: rgba(0, 0, 0, 0.6); color: white; padding: 20px; text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .portfolio-item { width: 100%; }
+        }
+    </style>
+</body>
+</html>
